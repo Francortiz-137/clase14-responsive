@@ -181,5 +181,10 @@ section{
     .thumbnail{
         height: 150px;
         left: 25%;
+        top: 120px;
+    }
+
+    .top-bar{
+        background-color: #1cd1b0;
     }
 }

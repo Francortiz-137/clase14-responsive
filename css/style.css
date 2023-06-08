@@ -1,0 +1,190 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+article{
+    background-color: #F3F3F3;
+    width: 25%;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 300px;
+    margin: 25px;
+    position: relative;
+}
+
+article button {
+    background-color: #00669F;
+    border: none;
+    color: #F3F3F3;
+    padding: 15px 0px;
+    margin-bottom: 19px;
+    margin-top: 37px;
+    font-size: 15px;
+    width: 129px;
+    align-self: center;
+}
+
+
+.like-icon{
+    z-index: 1000;
+    color: red;
+    display: flex;
+    margin-top: 15px;
+    margin-left: 21px;
+}
+
+article img{
+    border-radius: 100%;
+    position: absolute;
+    top: 135px;
+    left: 95px;
+}
+article h3{
+    font-size: 30px;
+    margin-top: 73px;
+    margin-bottom: 10px;
+}
+
+article p{
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.article-header{
+    background-image: url('../img/batman-background.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px 10px 0 0;
+    height: 200px;
+}
+
+.article-body{
+    margin: 0 50px;
+}
+
+.article-body img{
+    max-width: 200px;
+    width: 150px;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+nav{
+    background-color: #00669F;
+    height: 101px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+}
+
+nav h1{
+        
+    font-size: 2rem;
+    font-weight: 400;
+    padding: 28px;
+    color: white;
+}
+
+main{
+    margin-top: 154px;
+    margin-bottom: 151px;
+}
+
+footer{
+    background-color: #00669F;
+    color: #FFF9F9;
+    bottom: 0;
+    height: 51px;
+    font-size: 16px;
+    line-height: 84.69%;
+    margin-bottom: 0;
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 16px;
+}
+
+.top-bar{
+    background-color: #D1891C;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 16px;
+}
+
+.github-logo{
+    width: 100px;
+    height: 100px;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    padding-bottom: 20px;
+}
+footer img{
+    height: 20px;
+    margin-right: 20px;
+    position: relative;
+    bottom: 50%;
+}
+
+.plus-button{
+    background-color: #00669F;
+    color: white;
+    width: 75px;
+    height: 75px;
+    text-align: center;
+    text-justify: center;
+    border-radius: 100%;
+    right: 10px;
+    top: 50%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.plus-button i{
+    font-size: 30px;
+    
+}
+
+@media (min-width: 480px){
+    /*tablet*/
+    article {
+        width: 35%;
+    
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+
+@media (min-width: 768px){
+    /*pc*/
+    article {
+        width: 35%;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}

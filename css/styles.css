@@ -286,7 +286,7 @@ select{
     height: 33px;
     border: none;
     border-radius: 8px;
-    padding: 5px 0;
+    padding: 5px;
 }
 
 
@@ -374,7 +374,7 @@ select{
 }
   /* When the radio button is checked, add a blue background */
 .container input:checked ~ .radio {
-    background-color: #2196F3;
+    background-color: #eeeeee;
 }
 
   /* Create the indicator (the dot/circle - hidden when not checked) */
@@ -391,12 +391,12 @@ select{
 
   /* Style the indicator (dot/circle) */
 .container .radio:after {
-    top: 9px;
-    left: 9px;
-    width: 8px;
-    height: 8px;
+    top: 2.5px;
+    left: 2.5px;
+    width: 80%;
+    height: 80%;
     border-radius: 50%;
-    background: white;
+    background: #2196F3;
 }
 
 @media (min-width: 480px){

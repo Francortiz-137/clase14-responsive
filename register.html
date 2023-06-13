@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heroes</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <section class="top-bar">
+            <p>Descuentos 20%</p>
+        </section>
+    </header>
+    <nav>
+        <div>
+            <img src="img/logo 1.svg" alt="Logo">
+            <h1>Nombre Tienda</h1>
+        </div>
+        <i class="fa fa-bars"></i>
+    </nav>
+    <div class="nav-links">
+        <ul>
+            <a href="/contacto.html"><li>Contacto</li></a>
+            <a href="/register.html"><li>Registrarme</li></a>
+            <a href="/login.html"><li>Ingresar</li></a>
+        </ul>
+    </div>
+    <main>
+        <section class="register">
+            
+                <form action="">
+                    <div class="register-header">
+                        <h2>Agrega tu super!</h2>
+                        <p>Agrega tu personaje favorito completando las opciones</p>
+                    </div>
+                    
+                    <div class="register-body">
+                        <div>
+                            <label for="name">*Nombre</label>
+                            <input type="text" id="name" name="name" placeholder="Nombre" required>
+
+                            <label for="Fecha">Fecha</label>
+                            <input type="date" id="fecha" name="fecha" placeholder="dd/mm/yyyy">
+
+                            <textarea name="description" id="description" cols="30" rows="10" placeholder="Descipcion"></textarea>
+                        </div>
+                        
+                        <div>
+                            <label for="species">*Especie</label>
+                            <select type="text" id="species" name="species" placeholder="Especie" required>
+                                <option value="" disabled selected>Especie</option>
+                                <option value="Humano">Humano</option>
+                                <option value="Cryptoniano">Cryptoniano</option>
+                            </select>    
+
+                            <label for="foto">Agregar Foto</label>
+                            
+                            <input  type="file" id="foto" placeholder="Seleccionar archivo">
+
+                            <fieldset class="power">
+                                <legend>Poderes</legend>
+                            
+                                <div class="checkbox">
+                                    <label for="poderes">Volar</label>
+                                    <input type="checkbox" name="poderes" id="Volar" value="Volar">
+                                </div>
+                                <div class="checkbox">
+                                    <label for="poderes">SuperInteligencia</label>
+                                    <input type="checkbox" name="poderes" id="SuperInteligencia" value="Volar">
+                                </div>
+                                <div class="checkbox">
+                                    <label for="poderes">Vista de rayo láser</label>
+                                    <input type="checkbox" name="poderes" id="laser" value="Vista de rayo láser">
+                                </div>
+                                <div class="checkbox">
+                                    <label for="poderes">Billetera gorda</label>
+                                    <input type="checkbox" name="poderes" id="money" value="Billetera gorda">
+                                </div>
+                            </fieldset>
+                            <hr>
+
+                            <fieldset class="character-type">
+
+                                <legend>Tipo de personaje</legend>
+                                
+                                <div class="checkbox">
+                                    <label for="hero">Héroe - Heroína</label>
+                                    <input type="radio" name="tipo" id="hero" value="Volar">
+                                </div>
+                                <div class="checkbox">
+                                    <label for="villain">Villano - Villana</label>
+                                    <input type="radio" name="tipo" id="villain" value="Volar">
+                                </div>
+                            
+                            </fieldset>
+                        </div>
+                        
+                    </div>
+                    
+                    <button class="form-send" type="submit" name="Añadir">Añadir</button>
+                </form>
+            
+        </section>
+    </main>
+    <footer>
+        <p>Todos los derechos reservados a Frontend 1</p>
+        <a href="https://github.com/Francortiz-137/super-heroes"><img src="img/Vector.svg" alt="Github"></a>
+    </footer>
+</body>
+</html>

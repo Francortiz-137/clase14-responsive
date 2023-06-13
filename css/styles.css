@@ -108,6 +108,15 @@ nav{
     position: sticky;
     top: 0px;
     z-index: 1001;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+nav i{
+    color:white;
 }
 
 nav h1{
@@ -116,6 +125,22 @@ nav h1{
     font-weight: 400;
     padding: 28px;
     color: white;
+}
+
+nav div{
+    display: flex;
+}
+
+.nav-links{
+    background-color: #001D2D;
+    color: white;
+    display:none;
+}
+
+.nav-links ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .like-icon{
@@ -127,6 +152,7 @@ nav h1{
     position: absolute;
     top: 0;
     left: 0;
+    cursor: pointer;
 }
 
 .plus-button{
@@ -144,6 +170,10 @@ nav h1{
     justify-content: center;
     align-items: center;
     font-size: 30px;
+    cursor: pointer;
+}
+.plus-button:active{
+    background-color: #001D2D;
 }
 
 section{
@@ -161,6 +191,93 @@ section{
     padding-left: 16px;
 }
 
+.register {
+    color: white;
+    background-color: #00669F;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.register form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.register-body{
+    display: flex;
+    flex-direction: column;
+}
+.register-body div{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.power{
+    display: flex;
+    flex-direction: column;       
+}
+
+.character-type{
+    display: flex;
+    flex-direction: column;       
+}
+
+fieldset{
+    border: none;
+}
+
+textarea{
+    margin-top: 20px;
+    
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    resize: none;
+}
+
+.register-header {
+    margin-bottom: 20px;
+}
+
+input{
+    margin-bottom: 10px;
+    height: 33px;
+    border: #0000001A 1.53px;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+
+
+.form-send{
+    background-color: #1cd1b0;
+    color: white;
+    border: none;
+    border-radius: 18px;
+    padding: 20px 100px;
+    cursor: pointer;
+}
+
+.form-send:active{
+    background-color: #001D2D;
+}
+
+hr{
+    margin-bottom: 20px;
+}
+
+select{
+    margin-left:10px;
+    margin-bottom: 10px;
+    height: 33px;
+    border: none;
+    border-radius: 8px;
+    padding: 5px 0;
+}
+
 
 @media (min-width: 480px){
     /*tablet*/
@@ -173,11 +290,58 @@ section{
         justify-content: center;
         align-items: stretch;
     }
+
+    
+
+    .register-body{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .register-body div + div{
+        margin-left: 20px;
+    }
+
+    .register-body .checkbox{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    label{
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
 }
 
 
 @media (min-width: 769px){
     /*pc*/
+
+    nav i.fa{
+        display: none;
+    }
+
+    .nav-links{
+        background-color: #001D2D;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 5px 0;
+    }
+
+    .nav-links a{
+        text-decoration: none;
+        color: white;
+    }
+
+    .nav-links li{
+        margin-right: 10px;
+    }
+
     .thumbnail{
         height: 150px;
         left: 25%;
@@ -186,5 +350,17 @@ section{
 
     .top-bar{
         background-color: #1cd1b0;
+    }
+    
+    .register {
+        padding: 20px 120px;
+    }
+
+    .register{
+        width: 50vw;
+    }
+    main{
+        display: flex;
+        justify-content: center;
     }
 }

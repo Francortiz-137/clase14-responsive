@@ -37,6 +37,7 @@ article button {
     font-size: 15px;
     width: 129px;
     align-self: center;
+    cursor:pointer;
 }
 
 .article-body{
@@ -127,7 +128,7 @@ nav h1{
     color: white;
 }
 
-nav div{
+nav div a{
     display: flex;
 }
 

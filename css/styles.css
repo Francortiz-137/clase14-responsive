@@ -7,6 +7,11 @@
     font-family: 'Roboto', sans-serif;
 }
 
+a{
+    text-decoration: none;
+    color: white;
+}
+
 article{
     background-color: #F3F3F3;
     width: 25%;

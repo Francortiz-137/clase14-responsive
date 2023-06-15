@@ -314,8 +314,13 @@ nav div img{
     font-size: 30px;
     cursor: pointer;
 }
-.plus-button:active{
+
+.plus-button:hover{
     background-color: #001D2D;
+}
+
+.plus-button:active{
+    background-color: tomato;
 }
 
 section{
@@ -407,8 +412,13 @@ input[type ="checkbox"]::after{
     cursor: pointer;
 }
 
-.form-send:active{
+.form-send:hover{
     background-color: #001D2D;
+    color: white;
+}
+
+.form-send:active{
+    background-color: tomato;
     color: white;
 }
 
